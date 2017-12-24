@@ -8,14 +8,66 @@
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Back"
-            android:onClick="buttonSetSvr_back"
+            android:text="IP Address:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:width="200dp"
             />
+
+        <EditText
+            android:id="@+id/srvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:width="300dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="200dp"
+            android:text="Port:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/srvport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:numeric="integer"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="30sp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="buttonSetSvr_back"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btn_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:onClick="buttonSetSvr_back"
+                android:text="Cancle" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
 
     </android.support.v7.widget.LinearLayoutCompat>
 
